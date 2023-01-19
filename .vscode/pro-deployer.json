@@ -14,20 +14,20 @@
 		{
 			"name": "My FTP",
 			"type": "ftp",
-			"host": "dgrischow@students.mchenry.edu",
+			"host": "dgrischow.mccdgm.net",
 			"port": 21,
-			"user": "admin",
-			"password": "Crabclaws2002",
+			"user": "dgrischow",
+			"password": "Javascript23",
 			"dir": "/public_html",
 			"transferDataType": "binary"
 		},
 		{
 			"name": "My SFTP",
 			"type": "sftp",
-			"host": "dgrischow@students.mchenry.edu",
+			"host": "dgrischow.mccdgm.net",
 			"port": 22,
-			"user": "admin",
-			"password": "Crabclaws2002",
+			"user": "dgrischow",
+			"password": "Javascript23",
 			"dir": "/public_html",
 			"privateKey": null,
 			"passphrase": null

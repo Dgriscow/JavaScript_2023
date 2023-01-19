@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pets!</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/javascript.js"></script>
+    <script>
+        function dashSelector(){
+            document.getElementById("PetStorage").style.display='block';
+
+            document.getElementById("PetParagraph").innerHTML = "Here is the newest member of our family, Dash. He is a Morky, and he is the roudiest Dog you will ever meet. He is small but has has an almost limitless amount of energy, all he does is run around the house anytime he hears anything, its so cute. There is a reason his name is dash.";
+            document.getElementById("PetStorage").src="images/dash.jpeg";
+            document.getElementById("PetStorage").style.width = "800px";
+            
+}
+
+    </script>
+
+</head>
+<body>
+    <header id="MainHeader">
+        <h1>Pets of the Grischow Family House Hold</h1>
+    </header>
+    <main>
+
+        <div class="overView">
+            <div class="column">
+                <button type="button" onclick="dashSelector()" class="dash">Dash</button>
+                <button type="button" onclick="mollySelector()" class="molly">Molly</button>
+            </div>
+            <div class="column">
+                <img src="images/d.jpg" alt="Pets!" id="PetStorage">
+                <p id="PetParagraph">
+                    Heres all the Pets that we own in hour house!
+                </p>
+                <button type="button" onclick="removeImage()" id="deleteB">Remove Image</button>
+            </div>
+            <div class="column">
+                <button type="button" onclick="herbSelector()" class="herb">Herb</button>
+                <button type="button" onclick="blueSelector()" class="blue">Blue</button>
+            </div>
+          </div>
+          
+
+          
+
+
+        
+
+        
+
+       
+
+
+        
+    </main>
+    
+</body>
+<script>
+
+    function removeImage(){
+        document.getElementById("PetStorage").style.display='none';
+        
+    }
+
+
+
+    function herbSelector(){
+        document.getElementById("PetStorage").style.display='block';
+
+        document.getElementById("PetParagraph").innerHTML = "Herb the bird is another middle aged pet, he has been here for a while, we got him after our previous bird died. Herb is a very talkative bird, he loves to mimic things he hears, especially the dogs barking. I think he just wants to be apart of the loud sounds sometines, he wants to contribute to it. He is a little moody at times, but I still love him.";
+        document.getElementById("PetStorage").src="images/b.jpg";
+        document.getElementById("PetStorage").style.width = "450px";
+
+}
+</script>
+</html>
