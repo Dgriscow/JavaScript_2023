@@ -13,9 +13,10 @@
 
             document.getElementById("PetParagraph").innerHTML = "Here is the newest member of our family, Dash. He is a Morky, and he is the roudiest Dog you will ever meet. He is small but has has an almost limitless amount of energy, all he does is run around the house anytime he hears anything, its so cute. There is a reason his name is dash.";
             document.getElementById("PetStorage").src="images/dash.jpeg";
-            document.getElementById("PetStorage").style.width = "800px";
+            
             
 }
+
 
     </script>
 
@@ -37,10 +38,12 @@
                     Heres all the Pets that we own in hour house!
                 </p>
                 <button type="button" onclick="removeImage()" id="deleteB">Remove Image</button>
+                <button type="button" onclick="removeImage()" id="resize">resize Image</button>
+
             </div>
             <div class="column">
                 <button type="button" onclick="herbSelector()" class="herb">Herb</button>
-                <button type="button" onclick="blueSelector()" class="blue">Blue</button>
+                <button type="button" onclick="document.getElementById('PetStorage').style.width = '800px';" class="blue">Blue</button>
             </div>
           </div>
           
