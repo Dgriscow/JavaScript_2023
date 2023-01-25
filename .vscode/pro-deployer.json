@@ -1,5 +1,5 @@
 {
-	"uploadOnSave": true,
+	"uploadOnSave": false,
 	"autoDelete": true,
 	"checkGitignore": false,
 	"activeTargets": [
