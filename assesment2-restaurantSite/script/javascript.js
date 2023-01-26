@@ -51,7 +51,6 @@ function calculateTotal(){
 
 function displayEntry(food){
     let entry = food;
-    alert(entry);
 
     if (entry == 'pizza'){
         document.getElementById('pizzaWindow').style.display = 'block';
@@ -78,11 +77,11 @@ function displayEntry(food){
         document.getElementById('desertsWindow').style.display = 'none';
         document.getElementById('wrapsWindow').style.display = 'none';
     }else if (entry == 'deserts'){
-        document.getElementById('pizza').style.display = 'none';
-        document.getElementById('drinks').style.display = 'none';
-        document.getElementById('sides').style.display = 'none';
-        document.getElementById('deserts').style.display = 'block';
-        document.getElementById('wraps').style.display = 'none';
+        document.getElementById('pizzaWindow').style.display = 'none';
+        document.getElementById('drinksWindow').style.display = 'none';
+        document.getElementById('sidesWindow').style.display = 'none';
+        document.getElementById('desertsWindow').style.display = 'block';
+        document.getElementById('wrapsWindow').style.display = 'none';
     }
 
 }
