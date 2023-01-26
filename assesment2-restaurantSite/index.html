@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabaguchis Pizzaria</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script/javascript.js"></script>
+</head>
+<header>
+    <h1>Welcome To Gabaguchis Pizzaria</h1>
+    <label for="name">Enter the Name of the Order:</label>
+        <input type="text" id="name">
+
+</header>
+<body>
+    <div class="foodType">
+        <button id="pizza" onclick="displayEntry('pizza')">Pizza</button>
+        <button id="drinks" onclick="displayEntry('drinks')">Drinks</button>
+        <button id="wraps" onclick="displayEntry('wraps')">Wraps</button>
+        <button id="sides" onclick="displayEntry('sides')">Sides</button>
+        <button id="deserts" onclick="displayEntry('deserts')">Deserts</button>
+    </div>
+
+    <!-- Foodwindow is rows -->
+    <div class="foodWindow" id='pizzaWindow'>
+        <!-- fooditem is columns -->
+        <div class="foodItem">
+            <h3>Chicago Style Pizza</h3>
+            <button onclick="addToCart('pizza', 15, 'Chicago Style Pizza ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Cheese Pizza </h3>
+            <button onclick="addToCart('pizza', 10, 'Cheese Pizza ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Pepporoni Pizza</h3>
+            
+            <button onclick="addToCart('pizza', 13, 'Pepporoni Pizza ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Barbeque Pizza</h3>
+            
+            <button onclick="addToCart('pizza', 20, 'BBQ Pizza ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Sausage Pizza</h3>
+            
+            <button onclick="addToCart('pizza', 9, 'Sausage Pizza ')">Order</button>
+        </div>
+        <div class="foodItem">
+            
+            <h3>Bacon Pizza</h3>
+            
+            <button onclick="addToCart('pizza', 35, 'Bacon Pizza ')">Order</button>
+        </div>
+    </div>
+
+    
+    <!-- Foodwindow is rows -->
+    <div class="foodWindow" id='drinksWindow'>
+        <!-- fooditem is columns -->
+        <div class="foodItem" id="chicago">
+            <h3>Lemonande</h3>
+            
+            <button onclick="addToCart('drinks', 3, 'Lemonande ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Coke</h3>
+            
+            <button onclick="addToCart('drinks', 2, 'Coke ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Pepsi</h3>
+            
+            <button onclick="addToCart('drinks', 3, 'Pepsi ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Rasberry</h3>
+            
+            <button onclick="addToCart('drinks', 3, 'Rasberry ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Coke Zero</h3>
+            
+            <button onclick="addToCart('drinks', 3, 'Coke Zero ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Water</h3>
+           
+            <button onclick="addToCart('drinks', 1, 'Water ')">Order</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- Foodwindow is rows -->
+    <div class="foodWindow" id='wrapsWindow'>
+        <!-- fooditem is columns -->
+        <div class="foodItem" id="chicago">
+            <h3>Ghost Pepper Wraps</h3>
+            
+            <button onclick="addToCart('wraps', 6, 'Ghost Pepper Wrap ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Chicken Bacon Ranch</h3>
+            
+            <button onclick="addToCart('wraps', 4, 'Chicken Bacon Ranch ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Bean Wrap</h3>
+            
+            <button onclick="addToCart('wraps', 3, 'Bean Wrap ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Steak Wrap</h3>
+            
+            <button onclick="addToCart('wraps', 6, 'Steak Wrap ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Spicy Chicken Wrap</h3>
+            
+            <button onclick="addToCart('wraps', 8, 'Spicy Chicken Wrap ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Jalepeno Chicken Wrap</h3>
+            
+            <button onclick="addToCart('wraps', 6, 'Jalepeno Chicken Wrap ')">Order</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- Foodwindow is rows -->
+    <div class="foodWindow" id='sidesWindow'>
+        <!-- fooditem is columns -->
+        <div class="foodItem" id="chicago">
+            <h3>French Fries</h3>
+            
+            <button onclick="addToCart('sides', 3, 'French Fries ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Tater Tots</h3>
+            
+            <button onclick="addToCart('sides', 3, 'Tater Tots ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Cheese Curds</h3>
+            
+            <button onclick="addToCart('sides', 3, 'Cheese Curds ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Hash Browns</h3>
+            
+            <button onclick="addToCart('sides', 2, 'Hash Browns ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Cheese Fries</h3>
+            
+            <button onclick="addToCart('sides', 6, 'Cheese Fries ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Chicken Bites</h3>
+            
+            <button onclick="addToCart('sides', 6, 'Chicken Bites ')">Order</button>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Foodwindow is rows -->
+    <div class="foodWindow" id='desertsWindow'>
+        <!-- fooditem is columns -->
+        <div class="foodItem" id="chicago">
+            <h3>Choclate Ice Cream</h3>
+            
+            <button onclick="addToCart('deserts', 7, 'Chocolate Ice Cream ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Vanilla Ice Cream</h3>
+            
+            <button onclick="addToCart('deserts', 6, 'Vanilla Ice Cream ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Ice Cream Float</h3>
+            
+            <button onclick="addToCart('deserts', 7, 'Ice Cream Float ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Ice Cream Sundae</h3>
+            
+            <button onclick="addToCart('deserts', 8, 'Ice Cream Sundae ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Bannana Split</h3>
+            
+            <button onclick="addToCart('deserts', 7, 'Bannana Split ')">Order</button>
+        </div>
+        <div class="foodItem">
+            <h3>Ice Cream Cake</h3>
+            
+            <button onclick="addToCart('deserts', 6, 'Ice Cream Cake ')">Order</button>
+        </div>
+    </div>
+
+    <footer>
+        <button id="calculate" onclick="calculateTotal()">Calculate Total</button>
+        <div id="buyConfirmation">
+            <h5 id="buyMessage">You Bought:</h5>
+
+            <h5 id="categoryCost">Your Cost for Each category is: </h5>
+            <h5 id="total">In Total You Spent: </h5>
+            <h4 id="tot"></h4>
+        </div>
+        <p>&copy; Devin Grischow</p>
+        
+
+    </footer>
+
+    
+    
+</body>
+</html>
