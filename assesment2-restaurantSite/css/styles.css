@@ -198,6 +198,10 @@ button {
     border: none;
 }
 
+button:hover{
+    background-color: var(--primary_dark);
+}
+
 
 
 
@@ -229,7 +233,7 @@ footer{
     position: absolute;
 }
 .foodType>button:hover{
-    background-color: var(--primary_light);
+    background-color: var(--primary_dark);
 }
 .foodType>button {
     align-items: center;
