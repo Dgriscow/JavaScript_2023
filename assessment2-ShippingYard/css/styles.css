@@ -164,6 +164,7 @@ header{
 	color: var(--onPrimaryContainer);
     background-color: var(--primaryContainer);
     padding-bottom: 15px;
+    margin-bottom: 35px;
 }
 
 
@@ -186,7 +187,9 @@ button:hover{
 	color: var(--onteritaryContainer);
 	margin: auto;
 	text-align: center;
-    outline: #9f8c8c;
+    outline: #9f8c8c solid 3px;
+	margin-bottom: 100px;
+	border-radius: 30px;
 }
 .card p{
 	font-size: 2em;

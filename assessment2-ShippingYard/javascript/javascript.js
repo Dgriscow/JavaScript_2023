@@ -18,10 +18,11 @@ shippingYard.push(duck)
 
 function displayAgenda(){
     shippingYard.forEach((element) => {
-        var agendaItem = `<h2>${element.itemName}</h2>` + `<img src='${element.image}' alt="${element.itemName}">` +
+        var agendaItem = `<div class='card'>`+`<h2>${element.itemName}</h2>` + `<img src='${element.image}' alt="${element.itemName}">` +
         `<h4>Quantity: ${element.quantity}</h4>` +
         `<h3>Destination: ${element.destination}</h3>` + 
-        `<h3>Container Loading Zone: ${element.containerSection}</h3>`;
+        `<h3>Container Loading Zone: ${element.containerSection}</h3>` + 
+        `</div>`;
         console.log(`${element.itemName}`)
         document.getElementById('displayArea').innerHTML += agendaItem
     });
