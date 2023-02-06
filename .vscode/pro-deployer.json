@@ -14,20 +14,20 @@
 		{
 			"name": "My FTP",
 			"type": "ftp",
-			"host": "dgrischow.mccdgm.net",
+			"host": "dgrischow.mccweb.net",
 			"port": 21,
 			"user": "dgrischow",
-			"password": "CrabClaws212!",
+			"password": "CrabLegs021",
 			"dir": "/public_html",
 			"transferDataType": "binary"
 		},
 		{
 			"name": "My SFTP",
 			"type": "sftp",
-			"host": "dgrischow.mccdgm.net",
+			"host": "dgrischow.mccweb.net",
 			"port": 22,
 			"user": "dgrischow",
-			"password": "CrabClaws212!",
+			"password": "CrabLegs021",
 			"dir": "/public_html",
 			"privateKey": null,
 			"passphrase": null
