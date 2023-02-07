@@ -18,7 +18,7 @@
 			"port": 21,
 			"user": "dgrischow",
 			"password": "CrabLegs021",
-			"dir": "/public_html",
+			"dir": "/public_html/JavaScript_2023",
 			"transferDataType": "binary"
 		},
 		{
@@ -28,7 +28,7 @@
 			"port": 22,
 			"user": "dgrischow",
 			"password": "CrabLegs021",
-			"dir": "/public_html",
+			"dir": "/public_html/JavaScript_2023",
 			"privateKey": null,
 			"passphrase": null
 		}
