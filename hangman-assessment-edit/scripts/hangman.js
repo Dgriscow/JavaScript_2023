@@ -35,7 +35,7 @@ document.getElementById("submit").addEventListener("click", function(event){
     document.getElementById("guess").value = ''; // this reset value to null
     found = false
     if (usedWords.includes(userLetter.toUpperCase())){
-        console.log("USED")
+        //console.log("USED")
     }else{
         
 
