@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Or Cold?</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header id="guessColor"> <!--guess color will change to match the hue of the guess color-->
+        <!-- currGuess will present the guess if its warmer or colder -->
+        <h1 id="currGuess">Hot Or Cold?</h1>
+    </header>
+    <main>
+        <h3>Enter A Number To See how hotter or colder you are to guessing the Number!</h3>
+        <input type="number" id="guess">
+        <button onclick="guess()">Guess</button>
+
+    </main>
+    <footer id="guessColorF"> <!--footer will also change to guess hue-->
+        &copy; 2023 Devin Grischow
+    </footer>
+    
+</body>
+<script src="scripts/GameEngine.js"></script>
+</html>
