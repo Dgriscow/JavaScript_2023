@@ -157,6 +157,9 @@ function calculate() {
         console.log("Taurus")
         
     }else if ((month == "may" || month === "june") && (date in range(0, 21))){
+        console.log("Gemini")
+        
+    }else if ((month == "may" || month === "june") && (date in range(0, 21))){
         
     }
 
