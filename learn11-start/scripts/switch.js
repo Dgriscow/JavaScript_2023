@@ -1,25 +1,15 @@
-//implemented my own range function to make this program easier
-//this range function is perfect for this project, it returns the number of runs in the range, but it pluses one to the start, so 0 is not put into this range, because I use range to test if a user is a different zodiak. In python I would check against the indexes, but here I just check aginst my range number. 
-//mine counts from 0 to 20, but returns 1.....21
-function range(start, end){
-    var rangeTrac = 0
-    var rangeList = []
-    for (let i = start; i <= end; i++){
-        rangeTrac++
-        rangeList.push(rangeTrac)
-        
-    }
-    //rangelist is a list of numbers, and each number represents a single run
-    return rangeList
-
-}
 
 function calculate() {
     var chi = '';
     let myname = document.getElementById("fname").value;
     let month = document.getElementById("month").value;
+    month = month.toLowerCase();
+    month = month.slice(0,3)
     let date = parseInt(document.getElementById("date").value);
     let year = parseInt(document.getElementById("year").value);
+    
+
+    
 
 
     switch (year) {
@@ -146,26 +136,114 @@ function calculate() {
             chi = "Pig"
             break;
         default:
-            chi = "Sadface";
+            chi = "Error: Invalid date";
 
 
     }
     console.log(month, date)
-    if ((month === "march" || month === "april") && (date in range(0, 21))){
-        console.log("ARIES")
-    }else if ((month == "april" || month === "may") && (date in range(0, 20))){
-        console.log("Taurus")
+    //using a switch statement to get a users starsign
+    var starSign = ""
+    switch (month) {
+        case "jan":
+            if (date <= 19){
+                starSign = "Capricorn"
+            }else{
+                starSign = "Aquarius"
+            }
+            break;
+        case "feb":
+            if (date <= 18){
+                starSign = "Aquarius"
+            }else{
+                starSign = "Pisces"
+            }
+            break;
+        case "mar":
+            if (date <= 19){
+                starSign = "Pisces"
+            }else{
+                starSign = "Aries"
+            }
+            break;
+        case "apr":
+            if (date <= 19){
+                starSign = "Aries"
+            }else{
+                starSign = "Taurus"
+            }
+            break;
+        case "may":
+            if (date <= 21){
+                starSign = "Taurus"
+            }else{
+                starSign = "Geminis"
+            }
+            break;
+        case "jun":
+            if (date <= 20){
+                starSign = "Gemini"
+            }else{
+                starSign = "Cancer"
+            }
+            break;
+        case "jul":
+            if (date <= 22){
+                starSign = "Cancer"
+            }else{
+                starSign = "Leo"
+            }
+            break;
+        case "aug":
+            if (date <= 22){
+                starSign = "Leo"
+            }else{
+                starSign = "Virgos"
+            }
+            break;
+        case "sep":
+            if (date <= 22){
+                starSign = "Virgos"
+            }else{
+                starSign = "Libra"
+            }
+            break;
+        case "oct":
+            if (date <= 21){
+                starSign = "Libra"
+            }else{
+                starSign = "Scorpio"
+            }
+            break;
+        case "nov":
+            if (date <= 22){
+                starSign = "Scorpio"
+            }else{
+                starSign = "Sagittarius"
+            }
+            break;
+            case "dec":
+                if (date <= 22){
+                    starSign = "Sagittarius"
+                }else{
+                    starSign = "Capricorn"
+                }
+                break;
+            default:
+                starSign = "Error: Invalid date"
         
-    }else if ((month == "may" || month === "june") && (date in range(0, 21))){
-        console.log("Gemini")
         
-    }else if ((month == "may" || month === "june") && (date in range(0, 21))){
         
     }
+
+
+
+    console.log(starSign)
 
     
     document.getElementById("nameout").innerHTML = myname;
     document.getElementById("chinese").innerHTML = "Your Chinese zodiac sign is: " + chi;
+    document.getElementById("zodiac").innerHTML = "Your zodiac sign is: " + starSign;
+
 
 
 }
