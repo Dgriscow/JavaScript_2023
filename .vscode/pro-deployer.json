@@ -1,36 +1,36 @@
-// {
-// 	"uploadOnSave": false,
-// 	"autoDelete": true,
-// 	"checkGitignore": false,
-// 	"activeTargets": [
-// 		"My FTP"
-// 	],
-// 	"concurrency": 5,
-// 	"ignore": [
-// 		".git/**/*",
-// 		".vscode/**/*"
-// 	],
-// 	"targets": [
-// 		{
-// 			"name": "My FTP",
-// 			"type": "ftp",
-// 			"host": "dgrischow.mccweb.net",
-// 			"port": 21,
-// 			"user": "dgrischow",
-// 			"password": "CrabLegs021",
-// 			"dir": "/public_html/JavaScript_2023",
-// 			"transferDataType": "binary"
-// 		},
-// 		{
-// 			"name": "My SFTP",
-// 			"type": "sftp",
-// 			"host": "dgrischow.mccweb.net",
-// 			"port": 22,
-// 			"user": "dgrischow",
-// 			"password": "CrabLegs021",
-// 			"dir": "/public_html/JavaScript_2023",
-// 			"privateKey": null,
-// 			"passphrase": null
-// 		}
-// 	]
-// }
+{
+	"uploadOnSave": false,
+	"autoDelete": true,
+	"checkGitignore": false,
+	"activeTargets": [
+		"My FTP"
+	],
+	"concurrency": 5,
+	"ignore": [
+		".git/**/*",
+		".vscode/**/*"
+	],
+	"targets": [
+		{
+			"name": "My FTP",
+			"type": "ftp",
+			"host": "dgrischow.mccweb.net",
+			"port": 21,
+			"user": "dgrischow",
+			"password": "CrabLegs021",
+			"dir": "/public_html/JavaScript_2023",
+			"transferDataType": "binary"
+		},
+		{
+			"name": "My SFTP",
+			"type": "sftp",
+			"host": "dgrischow.mccweb.net",
+			"port": 22,
+			"user": "dgrischow",
+			"password": "CrabLegs021",
+			"dir": "/public_html/JavaScript_2023",
+			"privateKey": null,
+			"passphrase": null
+		}
+	]
+}
