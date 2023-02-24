@@ -61,7 +61,7 @@ https://m3.material.io/theme-builder#/custom
     --onPrimaryContainer: #ffdada;
     --onPrimary: ##68001a;
 
-    --background: #001f25;
+
 
 	--secondary: #ffba49;
     --secondaryContainer: #624000;
@@ -232,7 +232,7 @@ footer {
 }
 
 body{
-	background: var(--background);
+	background: wheat;
 	background-repeat:repeat-y;
     margin:auto;
 }
