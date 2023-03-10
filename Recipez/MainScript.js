@@ -12,7 +12,7 @@ function displayAllRecipes(){
     let list = Recipiez.map(function(recipe){
         console.log(recipe)
         let recipeButton = document.createElement('button');
-        recipeButton.innerHTML = `<h1>${recipe.name}</h1>` +  `<h4>${recipe.rating}</h4>`; // Set the button title and a rating
+        recipeButton.innerHTML = `<h1>${recipe.name}</h1>` +  `<h4>Recipe Source Rating: ${recipe.rating}</h4>`; // Set the button title and a rating
         recipeButton.addEventListener("click", function(event){
             event.preventDefault();
             maximizeRecipeInfo(recipe)

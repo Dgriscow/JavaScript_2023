@@ -262,14 +262,17 @@ footer {
     width: 1400px;
 }
 
-.RecipeSiteZone{
+.RecipeSiteZone {
     margin: auto;
     display: grid;
     justify-content: center;
-    width: 1400px;
+    width: 75%;
     background-color: var(--primary70);
 
+    height: 550px;
 }
+
+
 body{
 	background: var(--surface-variant-light);
 	background-repeat:repeat-y;
