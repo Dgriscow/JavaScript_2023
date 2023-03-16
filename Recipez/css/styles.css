@@ -128,30 +128,31 @@ h1, h2, h3, h4, h5, h6{
 	font-family: 'Ubuntu',sans-serif;
 	line-height: 2;
 }
-h1{
+h1 {
 	text-align: center;
 	font-size: 2em;
 	font-weight: 500;
 	font-family: 'Ubuntu', sans-serif;
-	color: var(--);
+	color: var(--on-primary-light);
 }
-h2{
+h2 {
 	font-size: 2.5em;
 	
 	font-weight: 500;
-	color: var(--dark_text);
 	text-align: center;
+	color: var(--on-primary-container-light);
 }
-h3{
+h3 {
 	font-size: 2em;
 	font-weight: 500;
 	color: var(--dark_text);
+	margin-left: 80%;
 }
-h4{
+h4 {
 	font-size: 1.5em;
 	font-weight: 300;
 	font-family: 'Ubuntu',sans-serif;
-	color: var(--light_text);
+	color: var(--on-primary-container-light);
 }
 h5{
 	font-size: 1em;
@@ -175,6 +176,12 @@ p{
 	font:'IBM Plex Sans' ;
 }
 
+a {
+	margin: auto;
+	font-size: 1.5em;
+	color: var(--secondary-light);
+}
+
 
 
 
@@ -192,18 +199,33 @@ header{
     margin-bottom: 35px;
 }
 
+#closeTOListScreen {
+	width: 110px;
+	float: left;
+	/*! display: flex; */
+	position: absolute;
+	font-size: 3em;
+	/*! color: red; */
+	background-color: tomato;
+	border-radius: 10px;
+}
+#closeTOListScreen:hover {
+	background-color: var(--tertiary-container-light);
+
+}
+
 
 button {
-    height: 110px;
-    /*! max-width: min-height(120px); */
+    height: 170px;
     background-color: var(--primary70);
     border: var(--outline-light) solid 2px;
     padding-bottom: 5px;
-    /*! margin: ; */
+
     margin-bottom: 1%;
-    /*! width: min-width(1100px); */
-    width: 1250px;
+
+    width: 1200px;
 }
+
 button:hover{
     background-color: var(--tertiary-container-light);
 }
@@ -241,11 +263,41 @@ footer {
     text-align: center;
     padding: 20px;
     background: var(--primary50);
-    color: var(--text-light);
+    color: var(--on-primary-light);
 }
 
+#PRType {
+	position: static;
+	margin-left: inherit;
+	padding-right: 50px;
+	font-size: 2.5em;
+	color: var(--on-primary-container-light);
+}
 
+#descriptionGraph {
+	margin: auto;
+	padding: 50px;
+	color: var(--on-primary-container-light);
+}
 
+#NameHeader {
+	padding-top: 25px;
+	font-size: 3em;
+	color: var(--on-primary-container-light);
+}
+
+#instagramIndicator {
+	background-color: orange;
+	margin-top: 5px;
+	border-radius: 10px;
+}
+
+#webIndicator{
+	background-color: lightseagreen;
+	margin-top: 5px;
+	border-radius: 10px;
+
+}
 
 
 
@@ -255,23 +307,26 @@ footer {
 /*                    layout       (footer, container, divs)              */
 
 
+
+
 .RecipeZone {
     margin: auto;
     display: grid;
     justify-content: center;
-    width: 1400px;
+    width: 95%;
 }
-
+  
 .RecipeSiteZone {
     margin: auto;
     display: grid;
+	border: var(--outline-light) solid 2px;
     justify-content: center;
-    width: 75%;
+    width: 1130px;
     background-color: var(--primary70);
 
-    height: 550px;
+    max-height: 40%;
+    border-radius: 15px;
 }
-
 
 body{
 	background: var(--surface-variant-light);
@@ -306,10 +361,17 @@ nav a{
 	background-color: var(--teritaryContainer);
     color: var(--onteritaryContainer);
 }
-img{
+
+img {
 	display: block;
+	width: 85%;
+	/*! height: 60%; */
 	
+	margin: auto;
+	border-radius: 15px;
 }
+
+
 figcaption{
 	text-align: center;
 	color: var(--light-text);
