@@ -98,8 +98,6 @@ function siteLinkScreen(ROB){
     recipeDocument.innerHTML += `<a href="${ROB.link}">Link to ${ROB.name}</a>`
 
 
-
-
 }
 
 
