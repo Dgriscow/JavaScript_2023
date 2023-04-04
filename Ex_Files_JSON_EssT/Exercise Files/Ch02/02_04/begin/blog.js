@@ -14,7 +14,7 @@ let posts = [
 ];
 
 // Enter code to stringify the `posts` variable here:
-
+let stringedPosts = JSON.stringify(posts);
 
 let article = {
   id: "386",
@@ -25,3 +25,5 @@ let article = {
 
 // Enter code to stringify the `article` variable here:
 
+let article234 = JSON.stringify(article);
+console.log(article234);
