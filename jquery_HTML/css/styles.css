@@ -133,7 +133,6 @@ h1 {
 	font-size: 2em;
 	font-weight: 500;
 	font-family: 'Ubuntu', sans-serif;
-	/*! color: var(--on-primary-light); */
 }
 h2 {
 	font-size: 2.5em;
@@ -167,11 +166,11 @@ h6{
 	color: var(--light_text);
 }
 
-p{
+p {
 	font-family: 'IBM Plex Serif', serif;
 	font-size: 1.5em;
 	line-height: 1.5;
-	color: var(--dark_text);
+	color: white;
 	padding: 5px;
 	font:'IBM Plex Sans' ;
 }
@@ -189,7 +188,7 @@ a {
 /*                     page elements    (Buttons, cards, headers, ETC)     */
 
 
-header{
+header {
     text-align: center;
 	font-size: 2em;
 	font-weight: 500;
@@ -198,6 +197,7 @@ header{
     background-color: var(--primary50);
     padding-bottom: 15px;
     margin-bottom: 35px;
+    color: white;
 }
 
 #closeTOListScreen {
@@ -217,18 +217,16 @@ header{
 
 
 button {
-    height: 170px;
-    background-color: var(--primary70);
+    background-color: var(--tertiary-container-light);
     border: var(--outline-light) solid 2px;
     padding-bottom: 5px;
 
-    margin-bottom: 1%;
 
-    width: 1200px;
 }
 
-button:hover{
-    background-color: var(--tertiary-container-light);
+button:hover {
+    background-color: var(--on-secondary-container-light);
+    color: white;
 }
 
 .card {
@@ -306,7 +304,9 @@ footer {
 }
 
 
-
+.turtle{
+	background-color: purple;
+}
 
 
 
@@ -334,8 +334,8 @@ footer {
     border-radius: 15px;
 }
 
-body{
-	background: var(--surface-variant-light);
+body {
+	background: var(--secondary-light);
 	background-repeat:repeat-y;
     margin:auto;
 }
@@ -423,6 +423,7 @@ figure p{
 	font:'IBM Plex Sans' ;
 }
 
+
 .light{
 	color: black;
 }
@@ -431,6 +432,13 @@ figure p{
 	color: white;
 }
 
+.light-body{
+	background-color: var(--secondary-light);
+}
+
+.dark-body{
+	background-color: var(--on-secondary-container-light);
+}
 
 
 
