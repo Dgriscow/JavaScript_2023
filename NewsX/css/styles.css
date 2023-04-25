@@ -1,0 +1,365 @@
+/*             CSS Reset                    */
+
+/* 
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*	Variables	 */
+					
+/*New Layout Color Assist Tool: 
+https://m3.material.io/theme-builder#/custom
+*/			
+:root{
+	--primary: #ffb3b6;
+    --primaryContainer: #920028;
+    --onPrimaryContainer: #ffdada;
+    --onPrimary: ##68001a;
+
+    --background: #001f25;
+
+	--secondary: #ffba49;
+    --secondaryContainer: #624000;
+    --onsecondaryContainer: #ffddb1;
+    --onsecondary: #442b00;
+
+    --teritary: #7ed0ff;
+    --teritaryContainer: #004c6a;
+    --onteritaryContainer: #c5e7ff;
+    --onteritary: #00344a;
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                     Text                   */
+h1, h2, h3, h4, h5, h6{
+	font-family: var(--headers);
+	color: var(--primary_light);
+	font-family: 'Ubuntu',sans-serif;
+	line-height: 2;
+}
+h1{
+	text-align: center;
+	font-size: 3em;
+	font-weight: 500;
+	font-family: 'Ubuntu', sans-serif;
+	color: var(--);
+}
+h2{
+	font-size: 2.5em;
+	
+	font-weight: 500;
+	color: var(--dark_text);
+	text-align: center;
+}
+h3{
+	font-size: 2em;
+	font-weight: 500;
+	color: var(--dark_text);
+}
+h4{
+	font-size: 1.5em;
+	font-weight: 300;
+	font-family: 'Ubuntu',sans-serif;
+	color: var(--light_text);
+}
+h5{
+	font-size: 1em;
+	font-style: italic;
+	font-family: 'Ubuntu', sans-serif;
+	color: var(--light_text);
+}
+h6{
+	font-size: 1em;
+	font-style: italic;
+	font-family: 'Ubuntu', sans-serif;
+	color: var(--light_text);
+}
+
+p{
+	font-family: 'IBM Plex Serif', serif;
+	font-size: 1.5em;
+	line-height: 1.5;
+	color: var(--dark_text);
+	padding: 5px;
+	font:'IBM Plex Sans' ;
+}
+
+
+
+
+/*                     page elements    (Buttons, cards, headers, ETC)     */
+
+
+header{
+    text-align: center;
+	font-size: 2em;
+	font-weight: 500;
+	font-family: 'Ubuntu', sans-serif;
+	color: var(--onPrimaryContainer);
+    background-color: var(--primaryContainer);
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+}
+
+
+button {
+    height: 40px;
+    width: 230px;
+    background-color: var(--primary_light);
+    border: none;
+}
+
+button:hover{
+    background-color: var(--primary_dark);
+}
+
+.card {
+	width: 70%;
+	min-height: 600px;
+	box-sizing: border-box;
+	background-color: var(--onteritary);
+	color: var(--onteritaryContainer);
+	margin: auto;
+	text-align: center;
+    outline: #9f8c8c solid 3px;
+	margin-bottom: 100px;
+	border-radius: 30px;
+}
+.card p{
+	font-size: 2em;
+	line-height: 1.5;
+	
+}
+.card img{
+	width: 80%;
+	display: block;
+	margin: auto;
+}
+.card figure{
+	
+	min-height: 100px;
+	outline: 1px solid var(--primary_dark);
+	outline-offset: 1px;
+	overflow: auto;
+}
+
+
+
+
+
+
+
+
+/*                    layout       (footer, container, divs)              */
+
+#customScrollElementTest{
+	background-color: purple;
+	color: yellow;
+	height: 200px;
+	width: 250px;
+
+}
+
+div{
+	background-color: white;
+
+}
+
+
+
+footer {
+    align-content: center;
+    background-color: var(--primaryContainer);
+    display: grid;
+	margin-top: 1000px;
+    justify-content: center;
+}
+
+#displayArea{
+    margin:auto;
+}
+
+body{
+	background: var(--background);
+	background-repeat:repeat-y;
+    margin:auto;
+}
+nav{
+	text-align: center;
+	padding: 30px; 
+	line-height: 3;
+}
+
+nav a{
+	text-decoration: none;
+	display: block;
+	border: 3px solid var(--primary);
+	border-radius: 20px;
+	padding: 10px 30px;
+	color: var(--light-text);
+	background-color:var(--primary);
+	font-family: var(--text);
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+
+
+ 
+
+.container{
+	width: 95%;
+	background-color: var(--teritaryContainer);
+    color: var(--onteritaryContainer);
+}
+img{
+	display: block;
+	
+}
+figcaption{
+	text-align: center;
+	color: var(--light-text);
+	
+}
+main{
+    margin: auto;
+}
+
+aside{
+	float: right;
+	display: block;
+	border: 2px solid var(--primary-light);
+	width: 25%;
+	padding: 10px;
+	box-sizing: border-box;
+	min-height: 600px;
+	
+	
+}
+aside h1, aside h2{
+	text-align: center;
+	color: var(--light-text);
+
+
+}
+
+
+
+figure #image{
+	float:left;
+	width: 33.33%;
+}
+
+
+
+figure p{
+	font-family: 'IBM Plex Serif', serif;
+	font-size: 1.5em;
+	line-height: 1.5;
+	color: var(--primary_light);
+	padding: 50px;
+	font:'IBM Plex Sans' ;
+}
+
+
+
+/* 				Responsive Design    */
+
+
+
+.row::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+  
+
+
+/* For mobile phones: */
+[class*="col-"]{
+	width: 100%;
+}
+  
+@media only screen and (min-width: 768px){
+	/* For desktop: */
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+}
