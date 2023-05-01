@@ -107,28 +107,31 @@ h1, h2, h3, h4, h5, h6{
 }
 h1{
 	text-align: center;
-	font-size: 3em;
-	font-weight: 500;
+	font-size: 4em;
+	font-weight: 800;
 	font-family: 'Ubuntu', sans-serif;
-	color: var(--);
+	color: white;
+	text-decoration: underline;
 }
 h2{
-	font-size: 2.5em;
+	font-size: 3em;
 	
-	font-weight: 500;
-	color: var(--dark_text);
+	font-weight: 700;
+	color: white;
 	text-align: center;
 }
-h3{
-	font-size: 2em;
-	font-weight: 500;
-	color: var(--dark_text);
+h3 {
+	font-size: 3em;
+	font-weight: 800;
+	color: black;
+	text-align: center;
 }
-h4{
+h4 {
 	font-size: 1.5em;
 	font-weight: 300;
 	font-family: 'Ubuntu',sans-serif;
-	color: var(--light_text);
+	color: white;
+	text-align: center;
 }
 h5{
 	font-size: 1em;
@@ -151,6 +154,32 @@ p{
 	padding: 5px;
 	font:'IBM Plex Sans' ;
 }
+#padName{
+	color: white;
+}
+
+#missionTitle{
+	font-size: 5em;
+}
+#missionDescription {
+	
+	text-align: center;
+	font-size: 2em;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	color: white;
+	width: 60%;
+	margin: auto;
+	margin-bottom: 3%;
+}
+
+#orbitImage {
+	
+	margin: auto;
+	height: 30em;
+}
+
+
 
 
 
@@ -228,11 +257,174 @@ button:hover{
 
 }
 
-div{
-	background-color: white;
+section{
+	overflow: hidden;
+}
+
+
+
+#spacexZone{
+	border: orange solid;
+
 
 }
 
+
+#otherLaunches{
+	display: block;
+}
+
+
+
+
+
+#upcoming-launch-Card--RIGHT{
+	background: url("../images/gp_rocket.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	float: right;
+	height: 55%;
+	width: 70%;
+
+
+
+
+
+	background-position: center;
+	margin-bottom: 20em;
+	border-radius: 10%;
+}
+
+#upcoming-launch-Card--LEFT{
+	background: url("../images/gp_rocket.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	float: left;
+	height: 55%;
+	width: 70%;
+
+
+
+
+
+
+	/*! margin: auto; */
+	background-position: center;
+	margin-bottom: 20em;
+	border-radius: 10%;
+}
+
+#upcoming-launch-Card--LEFT>img{
+
+
+	
+	width: 90%;
+
+
+
+
+
+	margin: auto;
+}
+#upcoming-launch-Card--RIGHT>img{
+
+
+
+	width: 90%;
+
+
+
+
+
+	margin: auto;
+	/*! height: 70%; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#upcoming-space-X-Card--RIGHT{
+	background: url("../images/MainRocket.jpg");
+
+	float: right;
+	height: 55%;
+	width: 70%;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+
+
+
+	background-position: center;
+	margin-bottom: 20em;
+	border-radius: 10%;
+}
+
+
+
+
+
+
+
+#upcoming-space-X-Card--LEFT{
+	background: url("../images/MainRocket.jpg");
+
+	float: left;
+	height: 55%;
+	width: 70%;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+
+
+
+
+	/*! margin: auto; */
+	background-position: center;
+	margin-bottom: 20em;
+	border-radius: 10%;
+}
+
+#upcoming-space-X-Card--LEFT>img{
+
+
+	
+	width: 90%;
+
+
+
+
+
+	margin: auto;
+}
+#upcoming-space-X-Card--RIGHT>img{
+
+
+
+	width: 90%;
+
+
+
+
+
+	margin: auto;
+	/*! height: 70%; */
+}
+
+.spaceXmoreInfoBody{
+	background-image: url("../images/space_BackGround.jpg");
+}
 
 
 footer {
@@ -243,13 +435,11 @@ footer {
     justify-content: center;
 }
 
-#displayArea{
-    margin:auto;
-}
 
 body{
-	background: var(--background);
-	background-repeat:repeat-y;
+	background-image: url("../images/new_pad_Background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
     margin:auto;
 }
 nav{
@@ -272,7 +462,10 @@ nav a{
 }
 
 
-
+.rocket-grid-container{
+	
+  	padding: 10px;
+}
  
 
 .container{
@@ -283,6 +476,7 @@ nav a{
 img{
 	display: block;
 	
+	border-radius: 10%;
 }
 figcaption{
 	text-align: center;
@@ -335,31 +529,6 @@ figure p{
 
 
 
-.row::after{
-	content: "";
-	clear: both;
-	display: table;
-}
-  
 
 
 /* For mobile phones: */
-[class*="col-"]{
-	width: 100%;
-}
-  
-@media only screen and (min-width: 768px){
-	/* For desktop: */
-	.col-1 {width: 8.33%;}
-	.col-2 {width: 16.66%;}
-	.col-3 {width: 25%;}
-	.col-4 {width: 33.33%;}
-	.col-5 {width: 41.66%;}
-	.col-6 {width: 50%;}
-	.col-7 {width: 58.33%;}
-	.col-8 {width: 66.66%;}
-	.col-9 {width: 75%;}
-	.col-10 {width: 83.33%;}
-	.col-11 {width: 91.66%;}
-	.col-12 {width: 100%;}
-}
