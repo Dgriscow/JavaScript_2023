@@ -213,17 +213,57 @@ async function loadAndCustomizeScreen(loaded_in_ID){
     let displayedLaunch = await fectReq.json();
     console.log(displayedLaunch);
 
-    document.getElementById("missionTitle").innerHTML = "Mission Name: " + displayedLaunch.mission.name;
-    document.getElementById("launchProvider").innerHTML = "Launch Agency:" + displayedLaunch.launch_service_provider.name;
-    document.getElementById("missionDescription").innerHTML = displayedLaunch.mission.description;
-    document.getElementById("orbitType").innerHTML = "Orbit Type: " + displayedLaunch.mission.orbit.name;
-    document.getElementById("padName").innerHTML = "Pad: " + displayedLaunch.pad.name;
-    document.getElementById("padLocation").innerHTML = "Location: " + displayedLaunch.pad.location.name;
+    let missionTitle = displayedLaunch.mission.name;
+    let launchProvider = displayedLaunch.launch_service_provider.name;
+    let missionDescription = displayedLaunch.mission.description;
+    let orbitType = displayedLaunch.mission.orbit.name;
+    let padName = displayedLaunch.pad.name;
+    let padLocation = displayedLaunch.pad.location.name;
+
+
+    if (missionTitle == null) {
+        missionTitle = "Unknown";
+    }
+    if (launchProvider == null) {
+        launchProvider = "Unknown";
+    }
+    if (missionDescription == null) {
+        missionDescription = "Unknown Description";
+    }
+    if (orbitType == null) {
+        orbitType = "Unknown";
+    }
+    if (padName == null) {
+        padName = "Unknown";
+    }
+    if (padLocation == null) {
+        padLocation = "Unknown";
+    }
+
+
+    document.getElementById("missionTitle").innerHTML = "Mission Name: " + missionTitle;
+    document.getElementById("launchProvider").innerHTML = "Launch Agency:" + launchProvider;
+    document.getElementById("missionDescription").innerHTML = missionDescription;
+    document.getElementById("orbitType").innerHTML = "Orbit Type: " + orbitType;
+    document.getElementById("padName").innerHTML = "Pad: " + padName;
+    document.getElementById("padLocation").innerHTML = "Location: " + padLocation;
 
     //load in image if one is avalible in system 
-    let orbitType =  displayedLaunch.mission.orbit.name;
 
     switch(orbitType){
+
+        case "Low Earth Orbit":
+            console.log("Low Earth Orbit", orbitType);
+            document.getElementById("orbitImage").src = "../images/LEO_SELECT.png";
+            break;
+
+        case "Medium Earth Orbit":
+            console.log("Medium Earth Orbit", orbitType);
+            document.getElementById("orbitImage").src = "../images/MEO_SELECT.png";
+            break;
+
+
+
 
 
         default:
@@ -242,6 +282,61 @@ async function loadAndCustomizeScreen(loaded_in_ID){
 
 
 }
+
+var slideToggle = true;
+$('#spaceTitle').click(function() {
+    if (slideToggle == true) {
+        $('#spacexTitleZone').slideToggle();
+        setTimeout(function() {
+            $('#spacexTitleZone').children().remove();
+            callAllOtherRockets()
+        }, 600);
+        slideToggle = false;
+
+
+    }else{
+        console.log("CHEMS");
+        getSpaceXLaunches()
+
+
+        setTimeout(function() {
+            $('#spacexTitleZone').slideToggle();
+
+
+            
+        }, 600);
+
+
+
+        // setTimeout(function() {
+        //     $("#spacexTitleZone").css("display", "");
+        // }, 10000);
+        
+        // slideToggle = true;
+        slideToggle = true;
+
+
+    }
+    
+    
+    
+    
+    
+    
+
+    
+
+  });
+
+
+$('#globalTitle').click(function() {
+    console.log("PRESSED NAME")
+    $('#otherLaunches').slideToggle();
+
+    
+    
+  });
+
 
 
 // function createAndLoadSpaceXModules(){
