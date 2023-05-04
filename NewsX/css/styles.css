@@ -176,7 +176,7 @@ p{
 #orbitImage {
 	
 	margin: auto;
-	height: 30em;
+	min-width: 80%;
 }
 
 
@@ -422,8 +422,9 @@ section{
 	/*! height: 70%; */
 }
 
-.spaceXmoreInfoBody{
+.spaceXmoreInfoBody {
 	background-image: url("../images/space_BackGround.jpg");
+	background-repeat: repeat;
 }
 
 
