@@ -61,7 +61,9 @@ async function createAndLoadSpaceXModules(item, index){
     let rocketName = item.rocket.configuration.full_name
     let missionName = item.mission.name
     let rocketImage = item.image
-    let windowEnd = item.window_end
+    let windowEnd = new Date(item.window_end);
+    let windowEndDay = windowEnd.toLocaleDateString();
+    let windowEndTime = windowEnd.toLocaleTimeString();
 
     console.log(rocketName, "\n",missionName, "\n",rocketImage, "\n",windowEnd)
     if (side === "right"){
@@ -69,7 +71,7 @@ async function createAndLoadSpaceXModules(item, index){
         `<h1>${missionName}</h1>` +
         `<h2>${rocketName}</h2>` +
         `<img src=${rocketImage} alt=${rocketName}>` +
-        `<h3>Window End: ${windowEnd}</h3>`;
+        `<h3>Launch Window End: ${windowEndTime} on ${windowEndDay}</h3>`;
 
         let newRightCard = document.createElement("div");
         newRightCard.id = "upcoming-space-X-Card--RIGHT";
@@ -91,7 +93,7 @@ async function createAndLoadSpaceXModules(item, index){
         let rocketInnerHtml =  `<h1>${missionName}</h1>` +
         `<h2>${rocketName}</h2>` +
         `<img src=${rocketImage} alt=${rocketName}>` +
-        `<h3>Launch Window End: ${windowEnd}</h3>`;
+        `<h3>Launch Window End: ${windowEndTime} on ${windowEndDay}</h3>`;
 
         let newLeftCard = document.createElement("div");
         newLeftCard.id = "upcoming-space-X-Card--LEFT";
@@ -122,7 +124,10 @@ async function createAndLoadOtherModules(item, index){
 
     };             
     let rocketImage = item.image;
-    let windowEnd = item.window_end;
+    let windowEnd = new Date(item.window_end);
+    let windowEndDay = windowEnd.toLocaleDateString();
+    let windowEndTime = windowEnd.toLocaleTimeString();
+    //convert windowEnd to local date and time object with the time zone of the browser
 
     console.log(rocketName, "\n",missionName, "\n",rocketImage, "\n",windowEnd)
     if (side2 === "right"){
@@ -130,7 +135,7 @@ async function createAndLoadOtherModules(item, index){
         `<h1>${missionName}</h1>` +
         `<h2>${rocketName}</h2>` +
         `<img src=${rocketImage} alt=${rocketName}>` +
-        `<h3>Window End: ${windowEnd}</h3>`;
+        `<h3>Launch Window End: ${windowEndTime} on ${windowEndDay}</h3>`;
 
         let newRightCard = document.createElement("div");
         newRightCard.id = "upcoming-launch-Card--RIGHT";
@@ -152,7 +157,7 @@ async function createAndLoadOtherModules(item, index){
         let rocketInnerHtml =  `<h1>${missionName}</h1>` +
         `<h2>${rocketName}</h2>` +
         `<img src=${rocketImage} alt=${rocketName}>` +
-        `<h3>Launch Window End: ${windowEnd}</h3>`;
+        `<h3>Launch Window End: ${windowEndTime} on ${windowEndDay}</h3>`;
 
         let newLeftCard = document.createElement("div");
         newLeftCard.id = "upcoming-launch-Card--LEFT";
@@ -215,6 +220,8 @@ async function loadAndCustomizeScreen(loaded_in_ID){
 
     let missionTitle = displayedLaunch.mission.name;
     let launchProvider = displayedLaunch.launch_service_provider.name;
+    let launchImg = displayedLaunch.image;
+
     let missionDescription = displayedLaunch.mission.description;
     let orbitType = displayedLaunch.mission.orbit.name;
     let padName = displayedLaunch.pad.name;
@@ -230,6 +237,11 @@ async function loadAndCustomizeScreen(loaded_in_ID){
     if (missionDescription == null) {
         missionDescription = "Unknown Description";
     }
+
+    if (launchImg == null) {
+        console.log("No Image Provided");
+    }
+
     if (orbitType == null) {
         orbitType = "Unknown";
     }
@@ -243,6 +255,10 @@ async function loadAndCustomizeScreen(loaded_in_ID){
 
     document.getElementById("missionTitle").innerHTML = "Mission Name: " + missionTitle;
     document.getElementById("launchProvider").innerHTML = "Launch Agency:" + launchProvider;
+
+    document.getElementById("laucnchImage").src = launchImg;
+
+
     document.getElementById("missionDescription").innerHTML = missionDescription;
     document.getElementById("orbitType").innerHTML = "Orbit Type: " + orbitType;
     document.getElementById("padName").innerHTML = "Pad: " + padName;
@@ -335,8 +351,16 @@ $('#globalTitle').click(function() {
 
     
     
-  });
+});
 
+
+function returnToIndex(){
+    window.open("../index.html");
+
+
+
+
+}
 
 
 // function createAndLoadSpaceXModules(){
