@@ -466,7 +466,8 @@ section{
 
 footer {
     align-content: center;
-    background-color: var(--primaryContainer);
+    background-color: var(--background);
+	color: white;
     display: grid;
 	margin-top: 1000px;
     justify-content: center;
