@@ -17,7 +17,7 @@
 			"host": "dgrischow.mccweb.net",
 			"port": 21,
 			"user": "dgrischow",
-			"password": "CrabLegs021",
+			"password": "DEPRACATED",
 			"dir": "/public_html/JavaScript_2023",
 			"transferDataType": "binary"
 		},
@@ -27,7 +27,7 @@
 			"host": "dgrischow.mccweb.net",
 			"port": 22,
 			"user": "dgrischow",
-			"password": "CrabLegs021",
+			"password": "DEPRACATED",
 			"dir": "/public_html/JavaScript_2023",
 			"privateKey": null,
 			"passphrase": null
