@@ -27,7 +27,7 @@
 			"host": "dgrischow.mccweb.net",
 			"port": 22,
 			"user": "dgrischow",
-			"password": "DEPRACATED",
+			"password": "No",
 			"dir": "/public_html/JavaScript_2023",
 			"privateKey": null,
 			"passphrase": null
